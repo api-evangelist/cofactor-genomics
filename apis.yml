@@ -1,8 +1,27 @@
 aid: cofactor-genomics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cofactor-genomics.png
 name: Cofactor Genomics
-description: Cofactor Genomics is a company surfaced as a portfolio company of dcvc, menlo-ventures, y-combinator
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: Cofactor Genomics is a precision-medicine biotechnology company that applies
+  RNA-sequencing and machine learning to build predictive immuno-oncology diagnostics.
+  Its flagship OncoPrism assay is designed to predict which cancer patients will respond
+  to immunotherapy, and the company runs the multi-center PREDAPT clinical trial across
+  more than 24 healthcare systems spanning 11 solid-tumor cancers. Cofactor Genomics is
+  a diagnostics and life-sciences company rather than an API provider; it publishes no
+  public developer portal, API documentation, or SDKs. This profile is maintained in the
+  API Evangelist network as a company record surfaced from venture-capital portfolios
+  (DCVC, Menlo Ventures, Y Combinator) and enriched with identity and domain-security
+  metadata.
 url: https://raw.githubusercontent.com/api-evangelist/cofactor-genomics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Genomics
+- Precision Medicine
+- Diagnostics
+- Immuno-Oncology
+- RNA Sequencing
+- Biotechnology
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +50,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cofactor-genomics-domain-security.yml
 - type: Website
   url: https://cofactorgenomics.com
+- type: Blog
+  url: https://cofactorgenomics.com/blog/
+- type: PrivacyPolicy
+  url: https://cofactorgenomics.com/npp/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
